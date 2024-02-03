@@ -1,0 +1,28 @@
+.app {
+   min-height: max(50rem, 100vh);
+   display: grid;
+   grid-template-columns: minmax(5rem, 1fr) minmax(min-content, 80rem) minmax(5rem, 1fr);
+   align-content: center;
+   grid-template-rows: min-content;
+   background-color: #D7EBFF;
+
+   @media only screen and (max-width: 40em) {
+      grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 55rem) minmax(2rem, 1fr);
+      background-color: white;
+   }
+}
+
+.appContainer {
+   grid-column: 2/-2;
+}
+
+.appSmall {
+   grid-template-columns: minmax(5rem, 1fr) minmax(min-content, 55rem) minmax(5rem, 1fr);
+   padding: 4rem 0;
+
+   @media only screen and (max-width: 40em) {
+      grid-template-columns: minmax(0, 1fr) minmax(min-content, 55rem) minmax(0, 1fr);
+      padding: 0;
+      background-color: white;
+   }
+}
