@@ -1,0 +1,142 @@
+.social {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   border-radius: 5px;
+   padding: 5rem 8rem 6rem;
+   overflow: hidden;
+   background-color: white;
+
+   @media only screen and (max-width: 40em) {
+      padding: 5rem;
+   }
+
+   @media only screen and (max-width: 26em) {
+      padding: 3rem;
+   }
+}
+
+.socialHeader {
+   grid-column: 1/-1;
+   margin-bottom: 3rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   align-items: center;
+
+   &>h1 {
+      font-size: 3.2rem;
+      font-weight: 500;
+      color: var(--color-heading);
+      text-align: center;
+   }
+
+   &>p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      text-align: center;
+      color: var(--color-text);
+   }
+}
+
+.formSocial {
+   grid-column: 1/-1;
+   display: flex;
+   gap: 1.5rem;
+   flex-direction: column;
+
+   & label {
+      font-size: 1.5rem;
+      color: var(--color-text);
+      margin-bottom: 0.5rem;
+   }
+
+   & input {
+      color: #646cff;
+      padding: 1.5rem 1.4rem;
+   }
+
+   & button {
+      font-size: 1.8rem;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      padding: 1.4rem 2rem;
+      color: white;
+      border-radius: 3px;
+      background-color: var(--color-primary);
+   }
+}
+
+/* border: 1px solid transparent;
+  padding: 0.9em 1.5em;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: inherit;
+  background: linear-gradient(to right, #515aff, #);
+  cursor: pointer;
+  transition: border-color 0.25s;
+ */
+.formGroup {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+
+}
+
+.formLinks {
+   display: flex;
+   gap: 1rem 2rem;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 1rem;
+
+   &>p {
+      color: var(--color-text);
+      flex: 0 0 100%;
+      font-size: 1.4rem;
+      text-align: center;
+   }
+
+   &>a {
+      display: inline-block;
+      border-radius: 0.8rem;
+      padding: 0.8rem;
+      padding-bottom: 3px;
+      border: 1px dashed #1d1d1d56;
+
+      &>svg {
+         width: 3rem;
+         height: 3rem;
+      }
+   }
+}
+
+.formError {
+   font-size: 1.3rem;
+   font-weight: 600;
+   color: #ff1241;
+   padding: 5px 0;
+}
+
+.formForgotLink {
+   text-align: end;
+   font-size: 1.3rem;
+   font-weight: 600;
+   padding: 8px 0;
+   color: #64728c;
+
+   &:hover {
+      color: var(--color-primary);
+   }
+}
+
+.formNoAccount {
+   text-align: center;
+   font-weight: 600;
+   font-size: 1.5rem;
+   color: #64728c;
+
+   &>a {
+      color: var(--color-primary);
+   }
+}
