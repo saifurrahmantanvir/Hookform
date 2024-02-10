@@ -5,6 +5,7 @@ import { Signup } from 'src/pages/Signup/Signup'
 import { UserData } from 'src/pages/UserData/UserData';
 import { UserSocial } from 'src/pages/UserSocial/UserSocial';
 import { ZodForm } from 'src/pages/ZodForm/ZodForm';
+import { YupForm } from 'src/pages/YupForm/YupForm';
 
 const App = () => {
   return (
@@ -17,6 +18,8 @@ const App = () => {
 
         <Route path='/zodform' element={<ZodForm />} />
         <Route path='/usersocial' element={<UserSocial />} />
+
+        <Route path='/yupform' element={<YupForm />} />
 
 
       </Routes>
